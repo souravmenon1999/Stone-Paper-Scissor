@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #a896e9 50%, rgba(32, 12, 32, 0.68) 100%);
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.rectangle {
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    height: 160px;
+    width: 800px;
+    display: flex;
+    font-family: "roboto";
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.item {
+    margin-top: 12px;
+    color: white;
+}
+
+.rectangle .item h1 {
+    width: 235px;
+    height: 37px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    margin: 6px 19px;
+}
+
+.result-box {
+    width: 139px;
+    height: 128px;
+    left: 881px;
+    top: 77px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    margin: auto 15px;
+    text-align: center;
+}
+
+.result-box p {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    color: #656565;
+    margin: 5px 0 0 0;
+}
+
+.result {
+    font-weight: 700;
+    font-size: 68px;
+    color: #252525;
+}
+
+
+
+
+.line {
+    width: 300px;
+    height: 15px;
+    z-index: -1;
+}
+
+.img1 {
+    position: absolute;
+    top: 350px;
+    left: 600px
+}
+
+.img2 {
+    position: absolute;
+    top: 490px;
+    left: 560px;
+    transform: rotate(50deg);
+    width: 250px;
+}
+
+.img3 {
+    width: 250px;
+    position: absolute;
+    top: 490px;
+    left: 670px;
+    transform: rotate(-50deg);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.style {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    background: #FFFFFF;
+    cursor: pointer;
+    margin: 0 80px;
+    margin-bottom: 80px;
+}
+
+.style:hover {
+    box-shadow: 0px 0px 0px 20px #22398b63;
+}
+
+.scissor {
+    border: 16px solid #CC00FF;
+    cursor: pointer;
+}
+
+.stone {
+    cursor: pointer;
+    border: 16px solid #FFD600;
+}
+
+.stone img {
+    position: relative;
+    right: 5px;
+}
+
+.paper {
+    border: 16px solid #FF4370;
+    cursor: pointer;
+    margin-left: 110px;
+
+}
+
+.paper-margin {
+    margin-bottom: 20px;
+}
+
+.try-again-1 {
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #FAF2F2;
+    width: 120px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.try-again-1:hover {
+    box-shadow: 0px 0px 0px 20px #0e150863;
+}
+
+
+
+.game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: white;
+}
+
+.win-border {
+    box-shadow: 0px 0px 0px 20px #22398b63;
+}
+
+.style2 {
+    width: 140px;
+    height: 140px;
+}
+
+.who-win {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.try-again-2 {
+    cursor: pointer;
+    width: 174px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #6B6B6B;
+    border: none;
+}
+
+.try-again-2:hover {
+    background-color: rgb(240, 233, 233);
+}
+
+
+
+
+.guidelines-region {
+    height: 25px;
+    text-align: center;
+    margin: 0 70px 3px 0;
+    display: flex;
+    justify-content: right;
+}
+
+.guidelines-button {
+    cursor: pointer;
+    width: 100px;
+    height: 33px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-size: 21px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.guidelines-button:hover {
+    background-color: #0E1A44;
+}
+
+.guidelines-popup {
+    visibility: hidden;
+    position: relative;
+    bottom: 370px;
+    left: 120px;
+    box-sizing: border-box;
+    width: 278px;
+    height: 325px;
+    background: #08143E;
+    border: 7px solid #465BA7;
+    border-radius: 13px;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.guidelines-popup button {
+    cursor: pointer;
+    position: relative;
+    left: 130px;
+    bottom: 30px;
+    background: #FF0000;
+    border: 5px solid #465BA7;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.guidelines-popup div {
+    position: relative;
+    bottom: 50px;
+}
+
+ul {
+    padding-top: 1px;
+}
+
+ul,
+li {
+    text-align: left;
+    width: 216px;
+    margin: 20px 0px 2px 0;
+    list-style-type: square;
+    font-size: 30px;
+    color: yellow;
+}
+
+span {
+    font-size: 13px;
+    color: white;
+    position: relative;
+    bottom: 12px;
+}
+
+.guidelines-show {
+    visibility: visible;
+}
